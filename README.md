@@ -17,7 +17,7 @@ A simple clustering strategy is now used based on user's interest and Euclidean 
 * Voting is just a simple model using linear regression with experienced arbitrary weight of each type of behavior.  
 
 ## Long Tail Solution
-We use something like Gaussian Mixture Model to handle long tail problem.  
+We use something like Gaussian Mixture to handle long tail problem.  
 Traditionally, the items we push to user is taken from the candidate pool of the exact cluster he belongs to. Once a user belongs to a small cluster with few other users, the items in this candidate pool would be few or even in bad quality. To solve this problem we try to take items from the neighbour cluster as well.  
 When we import an item from the candidate pool of neighbour clusters, the voting weight of this item should be modified (decrease). Assuming item $i$ originally in cluster $s$ is imported to cluster $t$, the modified voting weight goes to  
 >$$w_{it} = \sum_{s} w_{is} \times \alpha_{st} exp(-\beta \cdot d_{st})$$  
