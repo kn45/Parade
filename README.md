@@ -32,4 +32,4 @@ Generally, one cluster should has distance value with all the others but in prac
 There's no ranking strategy for now and the mixed voting result is directly used. There could be a logistic regression or other popular methods on sophisticated feature space.
 
 ## Real time implementation suggestion
-$$s=test+1$$
+To be continued
