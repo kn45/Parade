@@ -2,6 +2,7 @@
 # **PARADE**
 This is a recommendation system using large-scale collaborative filtering. Key modules involved are user clustering, anti-spam, long tail recommendation, ranking strategy etc.  
 System complexity is carefully considered to satisfy real-time requirement.  
+https://github.com/kn45/Parade
 ## System overview
 * User Clustering. Since the computation of similarity between users is not applicable, a user clustering algorithm should be implemented for collaborating filtering. For generalization, the distance between clusters should be quantifiable in a certain way.  
 * Voted Targeting Items. Targeting items are the spam-free items for recommendation. The voting behaviors from user to item should be tracked and quantized without cheating.  
